@@ -168,6 +168,9 @@ ul {
 .ui.card .image img {
   width: 100%; 
   border-radius: 5px;
+  justify-content: space-around;
+  justify-items: center;
+  text-align: end;
 }
 
 .ui.card .content h3 {
@@ -186,4 +189,8 @@ ul {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+body{
+  background-color: rgb(129, 38, 38);
 }
