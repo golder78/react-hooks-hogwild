@@ -1,17 +1,22 @@
 import React from 'react'
-import HogCard from './HogCard';
 
-
-const HogList =({hogs}) => {
+function HogList({ hog }) {
+  const { greased, weight, "highest medal achieved": medal, specialty } = hog
   return (
-    <div className="ui grid container">
-      {hogs.map(hog => (
-        <div className="ui grid container">
-          <HogCard hog={hog}/>
-          </div>
-      ))}
+    <div className="description">
+      <strong>{greased ? 'Greased' : 'Not Greased'}</strong>
+      <p>
+        Highest medal achived: <strong>{medal}</strong>
+      </p>
+      <p>
+        {specialty}
+      </p>
+      <p>
+         <strong>{weight}</strong>
+      </p>
+
     </div>
-  );
-};
+  )
+}
 
 export default HogList;
